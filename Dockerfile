@@ -46,6 +46,6 @@ WORKDIR $APP_ROOT
 
 COPY . $APP_ROOT
 
-EXPOSE 8000
+EXPOSE 8000 3978
 
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
